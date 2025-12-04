@@ -1,0 +1,100 @@
+.app {
+  font-family: Arial, sans-serif;
+  background: #f2f7ff;
+  min-height: 100vh;
+}
+
+.header {
+  background: #003566;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  margin: 0 8px;
+  background: #ffd500;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background: #ffdd33;
+}
+
+.content {
+  padding: 20px;
+}
+
+section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: #eef4ff;
+}
+
+.sidebar {
+  background: #002244;
+  width: 230px;
+  color: #fff;
+  padding: 25px 15px;
+  border-radius: 0 16px 16px 0;
+  animation: slideIn 0.8s ease;
+}
+
+.sidebar .logo {
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 16px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar ul li:hover {
+  background: #00509e;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+  animation: fadeIn 0.5s ease;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
